@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philip Hart | Technical Product Manager, Coder, Blogger</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Set font to Inter for clean readability */
+        :root {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scroll behavior for smooth scrolling when navigating sections */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Styling for the sticky header/navbar */
+        .sticky-nav {
+            backdrop-filter: blur(10px);
+            /* Updated to use a semi-transparent deep black for the header */
+            background-color: rgba(10, 10, 10, 0.9);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Custom Black/White/Grey Palette
+                        'primary-black': '#0A0A0A',       // Main Background (Deep Black)
+                        'secondary-grey': '#1A1A1A',      // Card Background (Dark Grey)
+                        'accent-white': '#F3F4F6',        // Primary Accent/Titles (Near White)
+                        'text-white': '#F3F4F6',          // Main Body Text
+                        'text-muted': '#A3A3A3',          // Muted Grey Text and Borders
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-primary-black text-text-white antialiased">
+
+    <!-- Sticky Navigation Header -->
+    <header class="sticky top-0 z-50 sticky-nav shadow-lg border-b border-text-muted">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Nav title uses accent-white for high contrast -->
+            <a href="#home" class="text-2xl font-bold text-accent-white hover:text-text-muted transition duration-300">Philip Hart</a>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <!-- Links now hover to the muted grey -->
+                <a href="#experience" class="hover:text-text-muted transition duration-300">Experience</a>
+                <a href="#projects" class="hover:text-text-muted transition duration-300">Projects</a>
+                <a href="#blogs" class="hover:text-text-muted transition duration-300">Blogs</a>
+                <a href="#contact" class="hover:text-text-muted transition duration-300">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-text-white hover:text-text-muted focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- 1. Hero / Home Section -->
+        <section id="home" class="pt-20 pb-24 md:pt-32 md:pb-40 text-center">
+            <div class="max-w-4xl mx-auto">
+                <!-- Placeholder Avatar/Image - now high contrast (white on black/grey) -->
+                <img src="image.png" 
+                     alt="Philip Hart" 
+                     class="w-36 h-36 mx-auto mb-6 rounded-full shadow-xl border-2 border-text-muted object-cover" />
+
+
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold mb-4 leading-tight">
+                    Technical Product Manager, <span class="text-accent-white">Coder & Blogger</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-text-muted max-w-2xl mx-auto mb-8">
+                    I lead development teams in building scalable, secure applications using modern cloud technologies and specialize in translating complex business needs into streamlined, elegant solutions.
+                </p>
+                <!-- Call to action button is now a high-contrast fill: near-white background, black text -->
+                <a href="#projects" class="inline-block px-8 py-3 bg-accent-white text-primary-black font-semibold rounded-lg shadow-lg hover:bg-text-muted transition duration-300 transform hover:scale-105">
+                    View My Work
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. Work Experience Section -->
+        <section id="experience" class="py-16 border-t border-text-muted">
+            <h2 class="text-4xl font-bold mb-12 text-center">Work <span class="text-accent-white">Experience</span></h2>
+
+            <div class="space-y-12 max-w-4xl mx-auto">
+
+                <!-- Experience Item 1 -->
+                <div class="bg-secondary-grey p-6 sm:p-8 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border border-text-muted">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
+                        <h3 class="text-2xl font-semibold text-text-white">Technical Product Manager</h3>
+                        <span class="text-sm text-text-muted mt-1 sm:mt-0">2012 – Present</span>
+                    </div>
+                    <p class="text-accent-white mb-3 font-medium">Altus Group</p>
+                    <p class="text-accent-white mb-1 font-small">2012</p>
+                    <p class="text-text-muted ml-4">I joined Altus Group as a QA Engineer, working on the flagship product, ARGUS Enterprise.</p>
+                    <p class="text-text-muted ml-4">
+                    Having never been exposed to PropTech or having a huge exposure to finance, I really did find myself in the deep end. 
+                    Luckily for me, I was surrounded by great, and particularly generous people, who helped me build a deep understanding of the CRE industry.
+                        <span class="text-white/90 font-medium">One of my favourite pastimes is growing that deep eduction of a domain</span>,
+                    to the point where you then become the expert. Within my first couple of years, I'd found myself in the offices of one our largest UK clients, demonstrating our new product features (as a QA).
+                    </p>
+                    <p class="mt-2 text-accent-white mb-1 font-small">2017</p>
+                    <p class="text-text-muted ml-4">
+                        As my experience & domain awareness grew,  I was then 
+                        <span class="text-white/90 font-medium">approached to take a role as a Business Analyst</span>.
+                        This type of move is quite common within Altus, because it takes time to create that expertise, 
+                        to be able to speak the customer's language, and to understand the financial aspects of the product.</p>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="bg-secondary-grey p-6 sm:p-8 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border border-text-muted">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
+                        <h3 class="text-2xl font-semibold text-text-white">Software Engineer</h3>
+                        <span class="text-sm text-text-muted mt-1 sm:mt-0">2018 – 2020</span>
+                    </div>
+                    <p class="text-accent-white mb-3 font-medium">Innovate Labs Ltd.</p>
+                    <ul class="list-disc list-inside space-y-2 text-text-muted ml-4">
+                        <li>Developed responsive front-end components using React and Tailwind CSS for the main product dashboard.</li>
+                        <li>Contributed to the design of RESTful APIs for new features, handling peak loads of 1,000 requests per second.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. Projects Section -->
+        <section id="projects" class="py-16 border-t border-text-muted">
+            <h2 class="text-4xl font-bold mb-12 text-center"><span class="text-accent-white">Projects</span> Showcase</h2>
+
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+
+                <!-- Project Item 1: Acceptance Criteria Generator -->
+                <div class="bg-secondary-grey p-6 rounded-xl shadow-xl border border-text-muted hover:border-accent-white transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-2 text-accent-white">Acceptance Criteria Generator</h3>
+                    <p class="text-sm text-text-muted mb-4">Tool | Next.js, Gemini API, JSON Schema</p>
+                    <p class="text-text-muted mb-4">
+                        A web application that takes natural language user stories and converts them into structured, executable acceptance criteria using the **Gherkin (Given/When/Then)** format. This speeds up documentation and ensures consistency across engineering teams.
+                    </p>
+                    <div class="flex space-x-4">
+                        <!-- Links are now text-white with a text-muted hover state -->
+                        <a href="#" class="text-sm text-text-white hover:text-text-muted font-medium underline">Live Demo</a>
+                        <a href="#" class="text-sm text-text-white hover:text-text-muted font-medium underline">GitHub Repo</a>
+                    </div>
+                </div>
+
+                <!-- Project Item 2: Real-time Data Visualization Engine -->
+                <div class="bg-secondary-grey p-6 rounded-xl shadow-xl border border-text-muted hover:border-accent-white transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-2 text-accent-white">Real-time Data Visualization Engine</h3>
+                    <p class="text-sm text-text-muted mb-4">Data | D3.js, WebSockets, Python Backend</p>
+                    <p class="text-text-muted mb-4">
+                        An interactive dashboard capable of handling high-frequency data streams. Uses D3.js to render complex charts (heatmaps, network graphs) with minimal CPU overhead, crucial for monitoring large systems.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-sm text-text-white hover:text-text-muted font-medium underline">Live Demo</a>
+                        <a href="#" class="text-sm text-text-white hover:text-text-muted font-medium underline">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Blogs Section -->
+        <section id="blogs" class="py-16 border-t border-text-muted">
+            <h2 class="text-4xl font-bold mb-12 text-center">Technical <span class="text-accent-white">Blogs</span></h2>
+
+            <div class="space-y-6 max-w-3xl mx-auto">
+                <!-- Blog Item 1 -->
+                <article class="bg-secondary-grey p-6 rounded-lg shadow-md border border-text-muted hover:bg-gray-800 transition duration-300">
+                    <h3 class="text-xl font-semibold mb-2 hover:text-accent-white transition duration-300">
+                        <a href="#">Mastering Zod for TypeScript Schema Validation at Scale</a>
+                    </h3>
+                    <p class="text-sm text-text-muted mb-3">Published: Oct 15, 2025 | Tags: TypeScript, Validation, Backend</p>
+                    <p class="text-text-muted">
+                        A deep dive into how Zod's schema inference capabilities eliminate manual type declarations and reduce runtime validation bugs in large-scale Node.js applications.
+                    </p>
+                </article>
+
+                <!-- Blog Item 2 -->
+                <article class="bg-secondary-grey p-6 rounded-lg shadow-md border border-text-muted hover:bg-gray-800 transition duration-300">
+                    <h3 class="text-xl font-semibold mb-2 hover:text-accent-white transition duration-300">
+                        <a href="#">Optimizing Firestore Reads: Strategies for Cost Reduction</a>
+                    </h3>
+                    <p class="text-sm text-text-muted mb-3">Published: Sep 28, 2025 | Tags: Cloud, Firestore, Database</p>
+                    <p class="text-text-muted">
+                        Examining techniques like subcollections, denormalization, and real-time listeners vs. one-time reads to keep NoSQL database costs low while maintaining application speed.
+                    </p>
+                </article>
+
+                <!-- Blog Item 3 -->
+                <article class="bg-secondary-grey p-6 rounded-lg shadow-md border border-text-muted hover:bg-gray-800 transition duration-300">
+                    <h3 class="text-xl font-semibold mb-2 hover:text-accent-white transition duration-300">
+                        <a href="#">The Case for Monorepos: Turbocharging Developer Productivity</a>
+                    </h3>
+                    <p class="text-sm text-text-muted mb-3">Published: Sep 01, 2025 | Tags: DevOps, Architecture, Tools</p>
+                    <p class="text-text-muted">
+                        Why centralized codebases (monorepos) with tools like Nx or Lerna simplify dependency management and cross-project sharing for multi-team organizations.
+                    </p>
+                </article>
+            </div>
+            <div class="text-center mt-12">
+                 <!-- Button now uses a darker grey fill with white text -->
+                 <a href="#" class="inline-block px-8 py-3 bg-gray-700 text-text-white font-semibold rounded-lg shadow-lg hover:bg-gray-600 transition duration-300 transform hover:scale-105">
+                    See All Blogs
+                </a>
+            </div>
+        </section>
+
+        <!-- 5. Contact Section / Footer -->
+        <section id="contact" class="py-16 border-t border-text-muted">
+            <h2 class="text-4xl font-bold mb-8 text-center">Get in <span class="text-accent-white">Touch</span></h2>
+
+            <div class="max-w-xl mx-auto text-center space-y-4">
+                <p class="text-lg text-text-muted">
+                    Have a project in mind, or just want to chat about engineering? Feel free to reach out!
+                </p>
+                <p class="text-xl font-medium">
+                    Email: <a href="mailto:john.doe@example.com" class="text-accent-white hover:text-text-muted transition duration-300">john.doe@example.com</a>
+                </p>
+                <div class="flex justify-center space-x-6 pt-4">
+                    <!-- Social Icons use muted grey for a subtle look -->
+                    <a href="#" class="text-text-muted hover:text-accent-white transition duration-300">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.372 0 0 5.372 0 12c0 5.292 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.344.725-4.04-1.61-4.04-1.61-.546-1.387-1.332-1.756-1.332-1.756-1.09-.745.082-.73.082-.73 1.205.085 1.838 1.237 1.838 1.237 1.07 1.835 2.809 1.305 3.495.998.108-.775.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.385 1.236-3.22-.124-.302-.534-1.52.117-3.175 0 0 1.008-.323 3.3.996 1.0-.276 2.05-.414 3.1-.42 1.05.006 2.1.144 3.1.42 2.29-1.32 3.297-1 3.297-1 .65 1.655.24 2.873.116 3.175.77.835 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.82 1.1.82 2.22 0 1.606-.015 2.898-.015 3.293 0 .317.21.697.825.575C20.565 21.8 24 17.29 24 12c0-6.628-5.372-12-12-12z"/></svg>
+                    </a>
+                    <a href="#" class="text-text-muted hover:text-accent-white transition duration-300">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.23 5.924c-.733.326-1.517.546-2.345.645.845-.508 1.493-1.312 1.802-2.276-.786.467-1.652.805-2.583.987-.743-.795-1.797-1.294-2.964-1.294-2.24 0-4.062 1.822-4.062 4.063 0 .318.036.626.106.92-.337-.017-6.368-3.32-8.373-8.883-.346.59-.545 1.278-.545 2.008 0 1.408.716 2.652 1.805 3.377-.665-.02-1.29-.205-1.836-.508v.05c0 1.972 1.405 3.618 3.265 3.998-.344.094-.707.144-1.08.144-.265 0-.525-.026-.777-.074.52 1.62 2.028 2.805 3.81 2.838-1.403 1.102-3.175 1.76-5.09 1.76-.33 0-.65-.02-.97-.058 1.816 1.164 3.973 1.84 6.29 1.84 7.55 0 11.674-6.25 11.674-11.674 0-.178-.004-.356-.012-.534.802-.577 1.496-1.292 2.046-2.106z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-secondary-grey mt-16 py-6 text-center text-text-muted text-sm border-t border-text-muted">
+        &copy; 2025 John Doe. All rights reserved. | Built with Tailwind CSS.
+    </footer>
+
+</body>
+</html>
